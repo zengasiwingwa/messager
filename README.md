@@ -6,14 +6,10 @@ To start your Phoenix server:
   * Create and migrate your database with `mix ecto.setup`
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit http://localhost:4000/receive-message?queue=euc&message=this%20is%20the%20message from your browser. Feel free to replace the queue name and message with whatever is necessary. Alternatively you can send a curl request to: 
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+  `curl http://localhost:4000/receive-message\?queue\=as\&message\=hellothere`
+  
+Run mix test to examine the unit tests. 
 
-## Learn more
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
